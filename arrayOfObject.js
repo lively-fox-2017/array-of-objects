@@ -8,6 +8,13 @@ function createObj(name, phase, gender){
   arr.push(obj);
 }
 
+function getData(name){
+  for (var i=0; i<arr.length; i++){
+    if (arr[i].name == name){
+      return arr[i];
+    }
+  }
+}
 
 
 
@@ -17,4 +24,5 @@ createObj('Adhit', 2, 'male');
 createObj('Tama', 2, 'male');
 createObj('Rifky', 3, 'male');
 
+console.log(getData('Icha'));
 console.log(arr);
